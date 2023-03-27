@@ -1,0 +1,9 @@
+{
+    "apps":[
+        {
+            "name":"AplicacaoFinanceiraApi",
+            "script": "node",
+            "args": "build/server.js"
+        }
+    ]
+}

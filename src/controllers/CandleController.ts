@@ -10,7 +10,7 @@ export default class CandleController {
     async findLastCandle (quantity:number):Promise<Candle[]> {
         const n = quantity > 0 ? quantity : 10
 
-        const lastCandle = await CandleModel.find().sort({_id:-1}).limit(n)
+        const lastCandle = await CandleModel.find().sort({finalDateTime:-1}).limit(n)
         return lastCandle
     }
 }
